@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp R                  &kp T                                               &kp F        &kp W    &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                  &kp MINUS         &kp LS(LG(S))      &kp ESC        &kp K        &lt 5 T  &kp N    &kp S  &lt 4 H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON         &kp SLASH          &kp LS(RCTRL)  &kp G        &kp D    &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &kp SPACE      &lt 1 ENTER                           &kp PRINTSCREEN
+&kp Q             &kp L         &kp U         &kp R                  &kp T                                           &kp H        &kp W    &lt 5 R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O                  &kp MINUS         &kp LS(LG(S))      &kp ESC    &kp K        &lt 5 T  &kp N    &kp S  &mkp MB1
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON         &lt 2 SLASH        &kp F      &kp G        &kp D    &kp M    &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &kp SPACE  &lt 1 ENTER                           &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&trans   &trans        &trans        &trans        &trans                                  &kp EQUAL     &kp PLUS      &kp MINUS     &none         &kp F5
-&kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans      &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F12  &kp F11       &kp F10       &kp F9        &kp F8        &kp F7      &kp F6        &kp F5        &kp F4        &kp F3        &kp F2        &kp F1
-&trans   &trans        &trans        &trans        &trans        &trans      &trans        &trans                                                  &kp F12
+&trans   &kp F7  &kp F8  &kp F9  &kp F10                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp TAB
+&kp TAB  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kt PLUS   &mkp MB2
+&none    &kp F1  &kp F2  &kp F3  &kp F12  &none       &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F2     &none
+&trans   &trans  &trans  &trans  &trans   &trans      &trans        &trans                                               &kp F12
             >;
         };
 
@@ -120,19 +120,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &kp F   &trans  &trans  &trans  &trans
-&trans  &trans  &kp A   &trans  &trans  &trans         &trans  &trans  &trans  &kp N   &kp S   &trans
-&kp Z   &kp X   &kp C   &kp V   &trans  &kp RCTRL      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                              &kp F   &trans  &trans  &trans  &trans
+&trans  &trans  &kp A   &trans  &trans  &trans         &trans       &trans  &trans  &kp N   &kp S   &trans
+&kp Z   &kp X   &kp C   &kp V   &trans  &kp RCTRL      &bootloader  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans                          &trans
             >;
         };
 
