@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp R                  &kp T                                                             &kp F        &kp W    &lt 5 R  &kp Y    &kp P
-&kp E             &kp I         &kp A         &kp O                  &kp MINUS       &kp LS(LG(S))                      &bootloader    &kp K        &lt 4 T  &kp K    &lt 3 S  &lt 4 H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON       &kp ESC                            &kp SEMICOLON  &kp G        &kp D    &kp M    &kp J    &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &kp LANGUAGE_1  &lt_to_layer_0 3 INT_MUHENKAN      &kp SPACE      &lt 1 ENTER                             &kp DEL
+&kp Q             &kp L         &kp U         &kp R                  &kp T                                             &kp F        &kp W    &lt 5 R  &kp Y    &kp P
+&kp E             &kp I         &kp A         &kp O                  &kp MINUS       &kp LS(LG(S))      &bootloader    &kp K        &lt 5 T  &kp N    &lt 3 S  &lt 4 H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON       &kp ESC            &kp SEMICOLON  &kp G        &kp D    &kp M    &kp J    &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSPACE      &kp SPACE      &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp N0  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp F12
             >;
         };
 
@@ -129,10 +129,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                         &kp F   &trans  &trans  &trans  &trans
+&trans  &trans  &kp A   &trans  &trans  &trans         &trans  &trans  &trans  &kp N   &kp S   &trans
+&kp Z   &kp X   &kp C   &kp V   &trans  &kp RCTRL      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans                          &trans
             >;
         };
 
