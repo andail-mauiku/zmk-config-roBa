@@ -80,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp R                  &kp T                                             &kp F        &kp W    &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                  &kp MINUS         &kp LS(LG(S))      &bootloader  &kp K        &lt 5 T  &kp N    &kp S  &lt 4 H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON         &kp ESC            &kp TAB      &kp G        &kp D    &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &kp SPACE    &lt 3 ENTER                           &kp PRINTSCREEN
+&kp Q             &kp L         &kp U         &kp R                  &kp T                                               &kp F        &kp W    &lt 5 R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O                  &kp MINUS         &kp LS(LG(S))      &kp ESC        &kp K        &lt 5 T  &kp N    &kp S  &lt 4 H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON         &kp SLASH          &kp LS(RCTRL)  &kp G        &kp D    &kp M    &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &kp SPACE      &lt 1 ENTER                           &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&trans        &trans        &trans        &trans        &trans                                   &kp EQUAL     &kp PLUS      &kp MINUS     &none         &kp F5
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans      &kp BACKSPACE  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F12       &kp F11       &kp F10       &kp F9        &kp F8        &kp F7      &kp F6         &kp F5        &kp F4        &kp F3        &kp F2        &kp F1
-&trans        &trans        &trans        &trans        &trans        &trans      &trans         &trans                                                  &kp F12
+&trans   &trans        &trans        &trans        &trans                                  &kp EQUAL     &kp PLUS      &kp MINUS     &none         &kp F5
+&kp TAB  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans      &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&kp F12  &kp F11       &kp F10       &kp F9        &kp F8        &kp F7      &kp F6        &kp F5        &kp F4        &kp F3        &kp F2        &kp F1
+&trans   &trans        &trans        &trans        &trans        &trans      &trans        &trans                                                  &kp F12
             >;
         };
 
