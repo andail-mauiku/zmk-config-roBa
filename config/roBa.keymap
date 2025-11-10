@@ -40,7 +40,7 @@
         };
 
         muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+            bindings = <&SelectAll INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
@@ -56,11 +56,39 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        SelectAll: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(A)>;
             label = "TO_LAYER_0";
+        };
+
+        NewFolder: NewFolder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(N))>;
+            label = "NEWFOLDER";
+        };
+
+        PreviousTab: PreviousTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(TAB))>;
+            label = "PREVIOUSTAB";
+        };
+
+        NextTab: NextTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+            label = "NEXTTAB";
+        };
+
+        CloseTab: CloseTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+            label = "CLOSETAB";
         };
     };
 
@@ -68,7 +96,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&SelectAll>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -80,10 +108,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA              &kp PERIOD                                      &kp H        &kp W    &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                  &kp MINUS         &kp LS(LG(S))      &kp ESC    &kp K        &lt 5 T  &kp N    &kp S  &mkp MB1
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON         &lt 2 SLASH        &kp F      &kp G        &kp D    &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &kp SPACE  &lt 1 ENTER                           &kp PRINTSCREEN
+&kp Q             &kp L         &kp U         &kp COMMA              &kp PERIOD                                      &kp H        &kp W    &lt 5 R  &kp Y    &kp P
+&kp E             &kp I         &kp A         &kp O                  &kp MINUS         &kp LS(LG(S))      &kp ESC    &kp K        &lt 5 T  &kp N    &lt 5 S  &mkp MB1
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                  &kp COLON         &lt 2 SLASH        &kp F      &kp G        &kp D    &kp M    &kp J    &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &kp SPACE  &lt 1 ENTER                             &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -129,10 +157,10 @@
 
         SCROLL {
             bindings = <
-&trans      &trans     &trans      &kp K_FIND   &trans                              &kp F   &kp C_AC_CLOSE  &trans     &kp K_REDO  &trans
-&trans      &trans     &kp A       &trans       &trans  &trans         &trans       &trans  &none           &kp RCTRL  &kp S       &trans
-&kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &kp RCTRL      &bootloader  &trans  &trans          &trans     &trans      &trans
-&trans      &trans     &trans      &trans       &trans  &trans         &trans       &trans                                         &trans
+&trans      &trans     &NewFolder  &kp K_FIND   &trans                              &kp F         &kp C_AC_CLOSE  &trans    &kp K_REDO  &trans
+&trans      &trans     &SelectAll  &trans       &trans  &trans         &trans       &PreviousTab  &CloseTab       &NextTab  &none       &trans
+&kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &kp RCTRL      &bootloader  &trans        &trans          &trans    &trans      &trans
+&trans      &trans     &trans      &trans       &trans  &trans         &trans       &trans                                              &trans
             >;
         };
 
