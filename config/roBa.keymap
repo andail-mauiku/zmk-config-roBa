@@ -90,6 +90,13 @@
             bindings = <&kp LC(W)>;
             label = "CLOSETAB";
         };
+
+        NewTab: NewTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T)>;
+            label = "NEWTAB";
+        };
     };
 
     behaviors {
@@ -157,10 +164,10 @@
 
         SCROLL {
             bindings = <
-&trans      &trans     &NewFolder  &kp K_FIND   &trans                              &kp F         &kp C_AC_CLOSE  &trans    &kp K_REDO  &trans
-&trans      &trans     &SelectAll  &trans       &trans  &trans         &trans       &PreviousTab  &CloseTab       &NextTab  &none       &trans
-&kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &kp RCTRL      &bootloader  &trans        &trans          &trans    &trans      &trans
-&trans      &trans     &trans      &trans       &trans  &trans         &trans       &trans                                              &trans
+&trans      &NewFolder  &NewTab     &kp K_FIND   &trans                              &kp F         &kp C_AC_CLOSE  &trans    &kp K_REDO  &trans
+&trans      &trans      &SelectAll  &trans       &trans  &trans         &trans       &PreviousTab  &CloseTab       &NextTab  &none       &trans
+&kp K_UNDO  &kp K_CUT   &kp K_COPY  &kp K_PASTE  &trans  &kp RCTRL      &bootloader  &trans        &trans          &trans    &trans      &trans
+&trans      &trans      &trans      &trans       &trans  &trans         &trans       &trans                                              &trans
             >;
         };
 
