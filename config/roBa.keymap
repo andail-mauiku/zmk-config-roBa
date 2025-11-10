@@ -87,7 +87,7 @@
         CloseTab: CloseTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp LC(W)>;
             label = "CLOSETAB";
         };
     };
