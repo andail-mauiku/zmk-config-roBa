@@ -97,6 +97,41 @@
             bindings = <&kp LC(T)>;
             label = "NEWTAB";
         };
+
+        Copy: Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+        };
+
+        Paste: Paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
+        };
+
+        Cut: Cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CUT";
+        };
+
+        Undo: Undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "UNDO";
+        };
+
+        Find: Find {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(F)>;
+            label = "FIND";
+        };
     };
 
     behaviors {
@@ -164,10 +199,10 @@
 
         SCROLL {
             bindings = <
-&trans      &NewFolder  &NewTab     &kp K_FIND   &trans                              &kp F         &kp C_AC_CLOSE  &trans    &kp K_REDO  &trans
-&trans      &trans      &SelectAll  &trans       &trans  &trans         &trans       &PreviousTab  &CloseTab       &NextTab  &none       &trans
-&kp K_UNDO  &kp K_CUT   &kp K_COPY  &kp K_PASTE  &trans  &kp RCTRL      &bootloader  &trans        &trans          &trans    &trans      &trans
-&trans      &trans      &trans      &trans       &trans  &trans         &trans       &trans                                              &trans
+&trans  &NewFolder  &NewTab     &Find   &trans                           &none         &none      &none     &none   &none
+&trans  &trans      &SelectAll  &trans  &trans  &trans      &none        &PreviousTab  &CloseTab  &NextTab  &none   &none
+&Undo   &Cut        &Copy       &Paste  &trans  &none       &bootloader  &none         &none      &none     &trans  &none
+&trans  &trans      &trans      &trans  &trans  &trans      &trans       &trans                                     &trans
             >;
         };
 
