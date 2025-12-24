@@ -182,10 +182,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F10                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &mkp MB2
-&trans  &none   &kp F2  &kp F3  &kp F12  &trans      &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &kp PLUS
-&trans  &trans  &trans  &trans  &trans   &trans      &trans        &trans                                           &none
+&trans   &kp F7  &kp F8  &kp F9  &kp F10                            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &none
+&kp TAB  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &mkp MB2
+&trans   &none   &kp F2  &kp F3  &kp F12  &trans      &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &kp PLUS
+&trans   &trans  &trans  &trans  &trans   &trans      &trans        &trans                                           &none
             >;
         };
 
@@ -220,10 +220,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &New    &trans                      &CloseTab  &PreTab   &none   &NextTab  &trans
-&trans  &trans  &trans  &All    &trans  &trans      &trans  &Return    &Advance  &trans  &trans    &trans
-&Undo   &Cut    &Copy   &Paste  &trans  &trans      &trans  &Max       &Mini     &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
+&trans  &trans  &trans  &New    &trans                          &CloseTab  &PreTab   &none   &NextTab  &trans
+&trans  &trans  &trans  &All    &trans  &trans          &trans  &Return    &Advance  &trans  &trans    &trans
+&Undo   &Cut    &Copy   &Paste  &trans  &trans          &trans  &Max       &Mini     &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &kp DELETE      &trans  &trans                                 &trans
             >;
         };
 
