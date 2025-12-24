@@ -167,7 +167,7 @@
 &kp Q             &kp L         &kp U         &kp COMMA                  &kp PERIOD                                       &kp F        &kp W  &lt 5 R  &kp Y  &kp P
 &kp E             &kp I         &kp A         &kp O                      &kp MINUS         &kp LS(LG(S))      &kp ESCAPE  &kp K        &kp T  &kp N    &kp S  &mkp MB1
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp COLON         &kp SLASH          &kp H       &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_1  &lt 2 LANGUAGE_2  &kp BACKSPACE      &kp SPACE   &lt 1 ENTER                         &kp RS(RG(S))
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_1  &lt 2 LANGUAGE_2  &kp BACKSPACE      &kp SPACE   &lt 1 ENTER                         &lt 2 RS(RG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -186,7 +186,7 @@
             bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &bootloader                  &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
         };
