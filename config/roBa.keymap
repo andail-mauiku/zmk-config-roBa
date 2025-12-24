@@ -69,6 +69,41 @@
             bindings = <&kp LC(V)>;
             label = "PASTE";
         };
+
+        Cut: Cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CUT";
+        };
+
+        New: New {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(N)>;
+            label = "NEW";
+        };
+
+        All: All {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A>;
+            label = "ALL";
+        };
+
+        PreTab: PreTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(RC(TAB))>;
+            label = "PRETAB";
+        };
+
+        NextTab: NextTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(TAB)>;
+            label = "NEXTTAB";
+        };
     };
 
     behaviors {
