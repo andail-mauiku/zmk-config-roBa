@@ -160,6 +160,20 @@
             bindings = <&kp RG(H)>;
             label = "VOICEINP";
         };
+
+        VirturlDesktop_Add: VirturlDesktop_Add {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(D))>;
+            label = "VIRTURLDESKTOP_ADD";
+        };
+
+        VrutualDesktop_Del: VrutualDesktop_Del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(F4))>;
+            label = "VRUTUALDESKTOP_DEL";
+        };
     };
 
     behaviors {
@@ -178,10 +192,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA                  &kp PERIOD                                        &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                      &kp MINUS         &kp LS(LG(F4))      &kp ESCAPE  &kp K        &kp T  &kp N    &kp S  &mkp MB1
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp COLON         &kp LG(LC(D))       &kp H       &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_1  &lt 2 LANGUAGE_2  &kp BACKSPACE       &kp SPACE   &lt 1 ENTER                         &lt 2 RS(RG(S))
+&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                        &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &VrutualDesktop_Del      &kp ESCAPE  &kp K        &kp T  &kp N    &kp S  &mkp MB1
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &VirturlDesktop_Add      &kp H       &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE            &kp SPACE   &lt 1 ENTER                         &lt 2 RS(RG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LC(LEFT)) LG(LC(RIGHT))>;
