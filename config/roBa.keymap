@@ -220,10 +220,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &none   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &New    &trans                      &CloseTab  &PreTab   &none   &NextTab  &trans
+&trans  &trans  &trans  &All    &trans  &trans      &trans  &Return    &Advance  &trans  &trans    &trans
+&Undo   &Cut    &Copy   &Paste  &trans  &trans      &trans  &Max       &Mini     &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                 &trans
             >;
         };
 
