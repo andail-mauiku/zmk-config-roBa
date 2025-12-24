@@ -132,6 +132,20 @@
             bindings = <&kp RA(RIGHT)>;
             label = "ADVANCE";
         };
+
+        Max: Max {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(UP_ARROW)>;
+            label = "MAX";
+        };
+
+        Mini: Mini {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(DOWN_ARROW)>;
+            label = "MINI";
+        };
     };
 
     behaviors {
