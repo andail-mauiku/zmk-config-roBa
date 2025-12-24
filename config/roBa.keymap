@@ -104,6 +104,34 @@
             bindings = <&kp RC(TAB)>;
             label = "NEXTTAB";
         };
+
+        NewTab: NewTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEWTAB";
+        };
+
+        Undo: Undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "UNDO";
+        };
+
+        Return: Return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LEFT)>;
+            label = "RETURN";
+        };
+
+        Advance: Advance {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(RIGHT)>;
+            label = "ADVANCE";
+        };
     };
 
     behaviors {
