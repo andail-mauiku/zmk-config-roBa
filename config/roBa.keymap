@@ -46,7 +46,7 @@
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            key-positions = <2 7>;
         };
 
         eq {
@@ -181,6 +181,27 @@
             bindings = <&kp LC(F)>;
             label = "SEACH";
         };
+
+        pagetop: pagetop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(HOME)>;
+            label = "PAGETOP";
+        };
+
+        pagedown: pagedown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(END)>;
+            label = "PAGEDOWN";
+        };
+
+        bold: bold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B)>;
+            label = "BOLD";
+        };
     };
 
     behaviors {
@@ -210,10 +231,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC    &kp F7        &kp F8        &kp F9          &kp F10                                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &voiceinp
-&kp TAB    &kp F4        &kp F5        &kp F6          &kp F11  &trans             &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none      &mkp MB2
-&trans     &none         &kp F2        &kp F3          &kp F12  &trans             &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp RIGHT_ALT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans        &trans                                               &none
+&kp ESC    &kp F7        &kp F8        &kp F9          &kp F10                                &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&kp TAB    &kp F4        &kp F5        &kp F6          &kp F11  &trans             &pagetop   &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mkp MB2
+&trans     &none         &kp F2        &kp F3          &kp F12  &trans             &pagedown  &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans     &trans                                                  &none
             >;
         };
 
@@ -248,7 +269,7 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &NewTab  &New       &trans                          &CloseTab  &PreTab   &none   &NextTab  &trans
+&trans  &trans  &NewTab  &New       &bold                           &CloseTab  &PreTab   &none   &NextTab  &trans
 &trans  &trans  &All     &voiceinp  &seach  &trans          &trans  &Return    &Advance  &trans  &trans    &trans
 &Undo   &Cut    &Copy    &Paste     &trans  &trans          &trans  &Max       &Mini     &trans  &trans    &trans
 &trans  &trans  &trans   &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
