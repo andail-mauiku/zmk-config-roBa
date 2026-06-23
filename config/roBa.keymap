@@ -26,24 +26,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&Copy INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         Copy: to_layer_0 {
@@ -77,29 +60,8 @@
         All: All {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A>;
+            bindings = <&kp LC(A)>;
             label = "ALL";
-        };
-
-        PreTab: PreTab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RS(RC(TAB))>;
-            label = "PRETAB";
-        };
-
-        NextTab: NextTab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RC(TAB)>;
-            label = "NEXTTAB";
-        };
-
-        NewTab: NewTab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(T)>;
-            label = "NEWTAB";
         };
 
         Undo: Undo {
@@ -116,53 +78,11 @@
             label = "RETURN";
         };
 
-        Advance: Advance {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(RIGHT)>;
-            label = "ADVANCE";
-        };
-
-        Max: Max {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RG(UP_ARROW)>;
-            label = "MAX";
-        };
-
-        Mini: Mini {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RG(DOWN_ARROW)>;
-            label = "MINI";
-        };
-
-        CloseTab: CloseTab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RC(W)>;
-            label = "CLOSETAB";
-        };
-
         voiceinp: voiceinp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(H)>;
             label = "VOICEINP";
-        };
-
-        VirturlDesktop_Add: VirturlDesktop_Add {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(D))>;
-            label = "VIRTURLDESKTOP_ADD";
-        };
-
-        VrutualDesktop_Del: VrutualDesktop_Del {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(F4))>;
-            label = "VRUTUALDESKTOP_DEL";
         };
 
         seach: seach {
