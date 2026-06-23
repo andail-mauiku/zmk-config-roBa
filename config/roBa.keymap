@@ -120,14 +120,14 @@
             label = "ADVANCEPAGE";
         };
 
-        cut: cut {
+        Cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X)>;
             label = "CUT";
         };
 
-        copy: copy {
+        Copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
@@ -209,7 +209,7 @@
             bindings = <
 &trans  &trans  &none   &New       &none                           &none    &none  &none   &none   &trans
 &trans  &trans  &All    &voiceinp  &seach  &trans          &trans  &Return  &none  &trans  &trans  &none
-&Undo   &cut    &cut    &Paste     &trans  &trans          &trans  &none    &none  &trans  &trans  &trans
+&Undo   &Cut    &Cut    &Paste     &trans  &trans          &trans  &none    &none  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &kp DELETE      &trans  &trans                          &trans
             >;
         };
