@@ -181,20 +181,6 @@
             bindings = <&kp LC(F)>;
             label = "SEACH";
         };
-
-        pagetop: pagetop {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RC(HOME)>;
-            label = "PAGETOP";
-        };
-
-        pagedown: pagedown {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RC(END)>;
-            label = "PAGEDOWN";
-        };
     };
 
     behaviors {
