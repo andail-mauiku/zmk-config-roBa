@@ -92,7 +92,7 @@
             label = "NEXTTAB";
         };
 
-        MiniTab: MaxTab {
+        MiniTab: MiniTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(DOWN)>;
