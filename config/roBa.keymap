@@ -229,19 +229,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &lt 5 R   &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &kp HOME  &trans     &trans                      &CloseTab  &PreTab   &lt 5 R   &trans    &trans
+&trans  &trans  &kp END   &kp RCTRL  &trans  &trans      &trans  &Return    &mkp MB1  &mkp MB3  &mkp MB2  &Advance
+&trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans     &trans    &trans    &trans    &trans
+&trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &NewTab  &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &trans
-&trans  &trans  &All     &voiceinp  &seach  &trans          &trans  &Return    &Advance  &trans  &trans    &trans
-&Undo   &Cut    &Copy    &Paste     &trans  &trans          &trans  &Max       &Mini     &trans  &trans    &trans
-&trans  &trans  &trans   &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
+&trans  &trans  &NewTab  &New       &none                           &CloseTab  &PreTab  &none   &NextTab  &trans
+&trans  &trans  &All     &voiceinp  &seach  &trans          &trans  &Return    &none    &trans  &trans    &Advance
+&Undo   &Cut    &Copy    &Paste     &trans  &trans          &trans  &Max       &Mini    &trans  &trans    &trans
+&trans  &trans  &trans   &trans     &trans  &kp DELETE      &trans  &trans                                &trans
             >;
         };
 
