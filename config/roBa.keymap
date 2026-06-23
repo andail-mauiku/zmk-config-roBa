@@ -26,7 +26,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        DoubleQuotation {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <7 2>;
+        };
+    };
 
     macros {
         New: New {
@@ -130,7 +137,7 @@
         Paste: Paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V>;
+            bindings = <&kp LC(V)>;
             label = "PASTE";
         };
     };
@@ -151,10 +158,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                  &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &kp C_MUTE         &kp ESCAPE  &kp K        &kp T  &kp N    &kp S  &mkp MB1
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &none              &kp H       &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE      &kp SPACE   &lt 1 ENTER                         &lt 2 RS(RG(S))
+&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                    &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &kp C_MUTE         &kp ESCAPE    &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &kp EXCL           &kp QUESTION  &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE      &kp SPACE     &lt 1 ENTER                         &lt 2 RS(RG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
