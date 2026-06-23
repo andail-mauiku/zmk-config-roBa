@@ -195,13 +195,6 @@
             bindings = <&kp RC(END)>;
             label = "PAGEDOWN";
         };
-
-        bold: bold {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B)>;
-            label = "BOLD";
-        };
     };
 
     behaviors {
