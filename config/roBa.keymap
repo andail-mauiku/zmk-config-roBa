@@ -37,20 +37,20 @@
 
     macros {
         mkp_exit_AML: mkp_exit_AML {
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&sl 4>;
 
-    bindings =
-        <&macro_press>,
-        <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-        <&macro_pause_for_release>,
-        <&macro_release>,
-        <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-        <&macro_tap>,
-        <&sl 4>;
+            label = "MKP_EXIT_AML";
+        };
 
-    label = "MKP_EXIT_AML";
-};
         New: New {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -213,10 +213,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &kp HOME  &trans     &trans                      &CloseTab  &PreTab   &lt 5 R   &NextTab  &kp HOME
-&trans  &trans  &kp END   &kp RCTRL  &trans  &trans      &trans  &Return    &mkp MB1  &mkp MB3  &mkp MB2  &AdvancePage
-&trans  &trans  &trans    &trans     &trans  &trans      &trans  &MaxTab    &MiniTab  &trans    &trans    &kp END
-&trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &kp HOME  &trans     &trans                      &none    &PreTab   &lt 5 R   &NextTab  &kp HOME
+&trans  &trans  &kp END   &kp RCTRL  &trans  &trans      &trans  &Return  &mkp MB1  &mkp MB3  &mkp MB2  &AdvancePage
+&trans  &trans  &trans    &trans     &trans  &trans      &trans  &MaxTab  &MiniTab  &trans    &trans    &kp END
+&trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans                                 &trans
             >;
         };
 
