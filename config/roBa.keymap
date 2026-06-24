@@ -173,10 +173,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                    &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &kp C_MUTE         &kp ESCAPE    &kp K        &kp T  &kp N    &kp S  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &kp EXCL           &kp QUESTION  &kp G        &kp D  &kp M    &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE      &kp SPACE     &lt 1 ENTER                         &lt 2 RS(RG(S))
+&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &kp C_MUTE           &kp ESCAPE    &kp K        &kp T  &kp N    &kp S  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &kp EXCLAMATION      &kp QUESTION  &kp G        &kp D  &kp M    &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE        &kp SPACE     &lt 1 ENTER                         &lt 2 RS(RG(S))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -222,10 +222,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &trans
-&trans  &trans  &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &trans    &AdvancePage
-&Undo   &Cut    &Cut    &Paste     &trans  &trans          &trans  &MaxTab    &MiniTab  &trans  &trans    &trans
-&trans  &trans  &trans  &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
+&trans  &kp HOME  &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &trans
+&trans  &kp END   &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &trans    &AdvancePage
+&Undo   &Cut      &Cut    &Paste     &trans  &trans          &trans  &MaxTab    &MiniTab  &trans  &trans    &trans
+&trans  &trans    &trans  &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
             >;
         };
 
