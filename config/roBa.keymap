@@ -155,6 +155,27 @@
             bindings = <&kp LC(V)>;
             label = "PASTE";
         };
+
+        Explorer: Explorer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(E)>;
+            label = "EXPLORER";
+        };
+
+        Save: Save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(S)>;
+            label = "SAVE";
+        };
+
+        Setting: Setting {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RG(I)>;
+            label = "SETTING";
+        };
     };
 
     behaviors {
@@ -173,7 +194,7 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
+&kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                      &kp F        &kp W  &lt 6 R  &kp Y  &kp P
 &kp E             &kp I         &kp A         &kp O                 &kp MINUS    &kp C_MUTE           &kp ESCAPE    &kp K        &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &kp EXCLAMATION      &kp QUESTION  &kp G        &kp D  &kp M    &kp J  &kp B
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE        &kp SPACE     &lt 1 ENTER                         &lt 2 RS(RG(S))
@@ -213,7 +234,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &kp HOME  &trans     &trans                      &none    &PreTab   &lt 5 R   &NextTab  &kp HOME
+&trans  &trans  &kp HOME  &trans     &trans                      &none    &PreTab   &lt 6 R   &NextTab  &kp HOME
 &trans  &trans  &kp END   &kp RCTRL  &trans  &trans      &trans  &Return  &mkp MB1  &mkp MB3  &mkp MB2  &AdvancePage
 &trans  &trans  &trans    &trans     &trans  &trans      &trans  &MaxTab  &MiniTab  &trans    &trans    &kp END
 &trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans                                 &trans
@@ -222,10 +243,10 @@
 
         SCROLL {
             bindings = <
-&trans  &kp HOME  &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &trans
-&trans  &kp END   &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &trans    &AdvancePage
-&Undo   &Cut      &Cut    &Paste     &trans  &trans          &trans  &MaxTab    &MiniTab  &trans  &trans    &trans
-&trans  &trans    &trans  &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
+&trans     &kp HOME  &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &Setting
+&Explorer  &kp END   &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &Save     &AdvancePage
+&Undo      &Cut      &Copy   &Paste     &trans  &trans          &trans  &MaxTab    &MiniTab  &trans  &trans    &trans
+&trans     &trans    &trans  &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
             >;
         };
 
