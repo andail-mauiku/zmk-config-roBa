@@ -103,7 +103,7 @@
         PreTab: PreTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(RS(T))>;
+            bindings = <&kp RS(RC(TAB))>;
             label = "PRETAB";
         };
 
