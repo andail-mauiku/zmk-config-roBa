@@ -234,7 +234,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &kp HOME  &trans     &trans                      &none    &PreTab   &lt 6 R   &NextTab  &kp HOME
+&trans  &trans  &kp HOME  &trans     &trans                      &none    &PreTab   &lt 5 R   &NextTab  &kp HOME
 &trans  &trans  &kp END   &kp RCTRL  &trans  &trans      &trans  &Return  &mkp MB1  &mkp MB3  &mkp MB2  &AdvancePage
 &trans  &trans  &trans    &trans     &trans  &trans      &trans  &MaxTab  &MiniTab  &trans    &trans    &kp END
 &trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans                                 &trans
