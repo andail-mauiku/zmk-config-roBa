@@ -176,6 +176,20 @@
             bindings = <&kp RG(I)>;
             label = "SETTING";
         };
+
+        WindowLeft: WindowLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT)>;
+            label = "WINDOWLEFT";
+        };
+
+        WindowRight: WindowRight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT)>;
+            label = "WINDOWRIGHT";
+        };
     };
 
     behaviors {
@@ -223,10 +237,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                       &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &none            &trans          &none            &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans           &trans          &kp LEFT_SHIFT   &trans   &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -234,17 +248,17 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &kp HOME  &trans     &trans                      &none    &PreTab   &lt 5 R   &NextTab  &kp HOME
-&trans  &trans  &kp END   &kp RCTRL  &trans  &trans      &trans  &Return  &mkp MB1  &mkp MB3  &mkp MB2  &AdvancePage
-&trans  &trans  &trans    &trans     &trans  &trans      &trans  &MaxTab  &MiniTab  &trans    &trans    &kp END
-&trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans                                 &trans
+&trans  &trans       &kp HOME  &trans        &trans                      &none    &PreTab   &lt 5 R   &NextTab  &none
+&trans  &WindowLeft  &kp END   &WindowRight  &trans  &trans      &trans  &Return  &mkp MB1  &mkp MB3  &mkp MB2  &AdvancePage
+&trans  &trans       &trans    &trans        &trans  &trans      &trans  &MaxTab  &MiniTab  &kp HOME  &kp END   &none
+&trans  &trans       &trans    &trans        &trans  &trans      &trans  &trans                                 &trans
             >;
         };
 
         SCROLL {
             bindings = <
 &trans     &kp HOME  &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &Setting
-&Explorer  &kp END   &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &Save     &AdvancePage
+&Explorer  &Setting  &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &Save     &AdvancePage
 &Undo      &Cut      &Copy   &Paste     &trans  &trans          &trans  &MaxTab    &MiniTab  &trans  &trans    &trans
 &trans     &trans    &trans  &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
             >;
