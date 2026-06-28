@@ -209,12 +209,12 @@
         default_layer {
             bindings = <
 &kp Q             &kp L         &kp U         &kp COMMA             &kp PERIOD                                      &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &kp C_MUTE           &kp ESCAPE    &kp K        &kp T  &kp N    &kp S  &kp H
+&kp E             &kp I         &kp A         &kp O                 &kp MINUS    &none                &kp ESCAPE    &kp K        &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp COLON    &kp EXCLAMATION      &kp QUESTION  &kp G        &kp D  &kp M    &kp J  &kp B
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 2 LANG1  &kp BACKSPACE        &kp SPACE     &lt 1 ENTER                         &lt 2 RS(RG(S))
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
         };
 
         FUNCTION {
@@ -222,17 +222,19 @@
 &kp ESC    &kp F7        &kp F8        &kp F9          &kp F10                             &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
 &kp TAB    &kp F4        &kp F5        &kp F6          &kp F11  &trans             &none   &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mkp MB2
 &trans     &none         &kp F2        &kp F3          &kp F12  &trans             &none   &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans  &trans                                                  &none
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans  &trans                                                  &bootloader
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &bootloader                  &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp MINUS                   &kp END          &kp UP_ARROW     &kp HOME         &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH                   &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans                      &trans           &trans           &trans           &trans        &trans           &trans          &trans                                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         ARROW {
@@ -243,7 +245,7 @@
 &trans          &trans           &trans          &kp LEFT_SHIFT   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         MOUSE {
@@ -257,7 +259,7 @@
 
         SCROLL {
             bindings = <
-&trans     &kp HOME  &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &Setting
+&trans     &none     &none   &New       &none                           &CloseTab  &PreTab   &none   &NextTab  &Setting
 &Explorer  &Setting  &All    &voiceinp  &seach  &trans          &trans  &Return    &none     &trans  &Save     &AdvancePage
 &Undo      &Cut      &Copy   &Paste     &trans  &trans          &trans  &MaxTab    &MiniTab  &trans  &trans    &trans
 &trans     &trans    &trans  &trans     &trans  &kp DELETE      &trans  &trans                                 &trans
