@@ -219,10 +219,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESC    &kp F7        &kp F8        &kp F9          &kp F10                             &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&kp TAB    &kp F4        &kp F5        &kp F6          &kp F11  &trans             &none   &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mkp MB2
-&trans     &none         &kp F2        &kp F3          &kp F12  &trans             &none   &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans  &trans                                                  &bootloader
+&kp ESC    &kp F7          &kp F8        &kp F9          &kp F10                             &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&kp TAB    &kp F4          &kp F5        &kp F6          &kp F11  &trans             &none   &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mkp MB2
+&trans     &kp UNDERSCORE  &kp F2        &kp F3          &kp F12  &trans             &none   &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN    &kp LEFT_ALT  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans  &trans                                                  &bootloader
             >;
         };
 
