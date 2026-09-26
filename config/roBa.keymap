@@ -218,6 +218,20 @@
             bindings = <&kp LA(TAB)>;
             label = "SWITCHING";
         };
+
+        YMM_Text_Shotcut: YMM_Text_Shotcut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(TAB)>;
+            label = "YMM_TEXT_SHOTCUT";
+        };
+
+        CtrlB: CtrlB {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B)>;
+            label = "CTRLB";
+        };
     };
 
     behaviors {
@@ -256,10 +270,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &none           &kp UP_ARROW    &none            &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&none      &kp END         &none           &kp HOME         &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans     &trans          &trans          &trans           &trans        &trans           &trans          &trans                                                                     &kp PIPE
+&kp MINUS  &CtrlB          &kp UP_ARROW    &YMM_Text_Shotcut  &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&none      &kp END         &none           &kp HOME           &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans     &trans          &trans          &trans             &trans        &trans           &trans          &trans                                                                     &kp PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
