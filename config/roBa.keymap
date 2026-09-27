@@ -194,7 +194,7 @@
         Pass: Pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q &kp W &kp E &kp R &kp T &kp Y &kp ENTER>;
+            bindings = <&kp Q &kp W &kp E &kp R &kp T &kp ENTER>;
             label = "PASS";
         };
 
@@ -219,7 +219,7 @@
             label = "SWITCHING";
         };
 
-        YMM_Text_Shotcut: YMM_Text_Shotcut {
+        YMM_TextTab: YMM_Text_Shotcut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(TAB)>;
@@ -231,6 +231,41 @@
             #binding-cells = <0>;
             bindings = <&kp LC(B)>;
             label = "CTRLB";
+        };
+
+        YMM_Group: YMM_Group {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(G)>;
+            label = "YMM_GROUP";
+        };
+
+        YMM_TextItem: YMM_Text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp J>;
+            label = "YMM_TEXT";
+        };
+
+        YMM_SoundItem: YMM_Text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp A &kp ENTER>;
+            label = "YMM_TEXT";
+        };
+
+        YMM_ImageItem: YMM_ImageItem {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp I>;
+            label = "YMM_IMAGEITEM";
+        };
+
+        YMM_MovieItem: YMM_MovieItem {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp V>;
+            label = "YMM_MOVIEITEM";
         };
     };
 
@@ -270,10 +305,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &CtrlB          &kp UP_ARROW    &YMM_Text_Shotcut  &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp RCTRL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&none      &kp END         &none           &kp HOME           &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans     &trans          &trans          &trans             &trans        &trans           &trans          &trans                                                                     &kp PIPE
+&kp MINUS  &CtrlB          &kp UP_ARROW    &YMM_TextTab     &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp RCTRL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&none      &YMM_ImageItem  &YMM_SoundItem  &YMM_MovieItem   &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &YMM_TextItem         &kp BACKSLASH
+&trans     &trans          &trans          &trans           &trans        &trans           &trans          &trans                                                                     &kp PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
