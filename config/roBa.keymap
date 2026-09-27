@@ -187,7 +187,7 @@
         Pass_21: Pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q &kp W &kp E &kp R &kp T &kp ENTER>;
+            bindings = <&kp Q &kp W &kp E &kp R &kp ENTER>;
             label = "PASS";
         };
 
