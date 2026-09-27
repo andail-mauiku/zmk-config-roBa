@@ -36,7 +36,7 @@
     };
 
     macros {
-        mkp_exit_AML: mkp_exit_AML {
+        mkp_exit_AML_1: mkp_exit_AML {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -51,217 +51,210 @@
             label = "MKP_EXIT_AML";
         };
 
-        New: New {
+        New_2: New {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(N)>;
             label = "NEW";
         };
 
-        All: All {
+        All_3: All {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(A)>;
             label = "ALL";
         };
 
-        Undo: Undo {
+        Undo_4: Undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>;
             label = "UNDO";
         };
 
-        Return: Return {
+        Return_5: Return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(LEFT)>;
             label = "RETURN";
         };
 
-        voiceinp: voiceinp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RG(H)>;
-            label = "VOICEINP";
-        };
-
-        seach: seach {
+        seach_6: seach {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(F)>;
             label = "SEACH";
         };
 
-        CloseTab: CloseTab {
+        CloseTab_7: CloseTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RC(W)>;
             label = "CLOSETAB";
         };
 
-        PreTab: PreTab {
+        PreTab_8: PreTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RS(RC(TAB))>;
             label = "PRETAB";
         };
 
-        NextTab: NextTab {
+        NextTab_9: NextTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RC(TAB)>;
             label = "NEXTTAB";
         };
 
-        MiniTab: MiniTab {
+        MiniTab_10: MiniTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(DOWN)>;
             label = "MAXTAB";
         };
 
-        MaxTab: MaxTab {
+        MaxTab_11: MaxTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(UP)>;
             label = "MAXTAB";
         };
 
-        AdvancePage: AdvancePage {
+        AdvancePage_12: AdvancePage {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(RIGHT)>;
             label = "ADVANCEPAGE";
         };
 
-        Cut: cut {
+        Cut_13: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X)>;
             label = "CUT";
         };
 
-        Copy: copy {
+        Copy_14: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
             label = "COPY";
         };
 
-        Paste: Paste {
+        Paste_15: Paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
             label = "PASTE";
         };
 
-        Explorer: Explorer {
+        Explorer_16: Explorer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(E)>;
             label = "EXPLORER";
         };
 
-        Save: Save {
+        Save_17: Save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(S)>;
             label = "SAVE";
         };
 
-        Setting: Setting {
+        Setting_18: Setting {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RG(I)>;
             label = "SETTING";
         };
 
-        WindowLeft: WindowLeft {
+        WindowLeft_19: WindowLeft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LEFT)>;
             label = "WINDOWLEFT";
         };
 
-        WindowRight: WindowRight {
+        WindowRight_20: WindowRight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(RIGHT)>;
             label = "WINDOWRIGHT";
         };
 
-        Pass: Pass {
+        Pass_21: Pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Q &kp W &kp E &kp R &kp T &kp ENTER>;
             label = "PASS";
         };
 
-        Newfolder: Newfolder {
+        Newfolder_22: Newfolder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LS(N))>;
             label = "NEWFOLDER";
         };
 
-        PreviousFolder: PreviousFolder {
+        PreviousFolder_23: PreviousFolder {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(UP_ARROW)>;
             label = "PREVIOUSFOLDER";
         };
 
-        Switching: Switching {
+        Switching_24: Switching {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(TAB)>;
             label = "SWITCHING";
         };
 
-        YMM_Tab: YMM_Text_Shotcut {
+        YMM_Tab_25: YMM_Text_Shotcut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(TAB)>;
             label = "YMM_TEXT_SHOTCUT";
         };
 
-        CtrlB: CtrlB {
+        CtrlB_26: CtrlB {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B)>;
             label = "CTRLB";
         };
 
-        YMM_Group: YMM_Group {
+        YMM_Group_27: YMM_Group {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(G)>;
             label = "YMM_GROUP";
         };
 
-        YMM_TextItem: YMM_Text {
+        YMM_TextItem_28: YMM_Text {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB2 &kp J>;
             label = "YMM_TEXT";
         };
 
-        YMM_SoundItem: YMM_Text {
+        YMM_SoundItem_29: YMM_Text {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB2 &kp A &kp ENTER>;
             label = "YMM_TEXT";
         };
 
-        YMM_ImageItem: YMM_ImageItem {
+        YMM_ImageItem_30: YMM_ImageItem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB2 &kp I>;
             label = "YMM_IMAGEITEM";
         };
 
-        YMM_MovieItem: YMM_MovieItem {
+        YMM_MovieItem_31: YMM_MovieItem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB2 &kp V>;
@@ -273,7 +266,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&Copy>;
+            bindings = <&mo>, <&Copy_14>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -299,16 +292,16 @@
 &kp ESC       &kp F7          &kp F8     &kp F9          &kp F10                                      &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
 &kp TAB       &kp F4          &kp F5     &kp F6          &kp F11  &trans             &kp KP_MULTIPLY  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mkp MB2
 &trans        &kp UNDERSCORE  &kp F2     &kp F3          &kp F12  &trans             &none            &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp LEFT_ALT  &kp LEFT_WIN    &kp LCTRL  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans           &trans                                                  &Pass
+&kp LEFT_ALT  &kp LEFT_WIN    &kp LCTRL  &kp LEFT_SHIFT  &trans   &kp BACKSPACE      &trans           &trans                                                  &Pass_21
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS  &CtrlB          &kp UP_ARROW    &YMM_Tab         &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp RCTRL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&none      &YMM_ImageItem  &YMM_SoundItem  &YMM_MovieItem   &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &YMM_TextItem         &kp BACKSLASH
-&trans     &trans          &trans          &trans           &trans        &trans           &trans          &trans                                                                     &kp PIPE
+&kp MINUS  &CtrlB_26          &kp UP_ARROW       &YMM_Tab_25        &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp RCTRL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&none      &YMM_ImageItem_30  &YMM_SoundItem_29  &YMM_MovieItem_31  &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &YMM_TextItem_28      &kp BACKSLASH
+&trans     &trans             &trans             &trans             &trans        &trans           &trans          &trans                                                                     &kp PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -336,10 +329,10 @@
 
         SCROLL {
             bindings = <
-&Setting   &Switching  &Newfolder  &New        &PreviousFolder                               &CloseTab     &PreTab       &none   &NextTab  &kp HOME
-&Explorer  &Setting    &All        &kp DELETE  &seach           &trans          &trans       &Return       &AdvancePage  &trans  &Save     &kp END
-&Undo      &Cut        &Copy       &Paste      &trans           &trans          &trans       &MaxTab       &MiniTab      &trans  &trans    &trans
-&trans     &trans      &trans      &trans      &trans           &kp DELETE      &WindowLeft  &WindowRight                                  &trans
+&Setting_18   &Switching_24  &Newfolder_22  &New_2      &PreviousFolder_23                                  &CloseTab_7      &PreTab_8        &none   &NextTab_9  &kp HOME
+&Explorer_16  &Setting_18    &All_3         &kp DELETE  &seach_6            &trans          &trans          &Return_5        &AdvancePage_12  &trans  &Save_17    &kp END
+&Undo_4       &Cut_13        &Copy_14       &Paste_15   &trans              &trans          &trans          &MaxTab_11       &MiniTab_10      &trans  &trans      &trans
+&trans        &trans         &trans         &trans      &trans              &kp DELETE      &WindowLeft_19  &WindowRight_20                                       &trans
             >;
         };
 
