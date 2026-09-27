@@ -233,14 +233,14 @@
             label = "YMM_GROUP";
         };
 
-        YMM_TextItem_28: YMM_Text {
+        YMM_TextItem_28: YMM_TextItem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB2 &kp J>;
             label = "YMM_TEXT";
         };
 
-        YMM_SoundItem_29: YMM_Text {
+        YMM_SoundItem_29: YMM_SoundItem {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB2 &kp A &kp ENTER>;
