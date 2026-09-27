@@ -298,10 +298,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &CtrlB_26          &kp UP_ARROW       &YMM_Tab_25        &kp PLUS                                       &kp CARET         &kp AMPERSAND      &kp RCTRL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH  &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&none      &YMM_ImageItem_30  &YMM_SoundItem_29  &YMM_MovieItem_31  &kp PERIOD    &bootloader      &bootloader     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &YMM_TextItem_28      &kp BACKSLASH
-&trans     &trans             &trans             &trans             &trans        &trans           &trans          &trans                                                                     &kp PIPE
+&kp MINUS  &CtrlB_26          &kp UP_ARROW       &YMM_Tab_25        &kp PLUS                                       &kp CARET        &kp AMPERSAND      &kp RCTRL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH  &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp ASTERISK  &none            &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&none      &YMM_ImageItem_30  &YMM_SoundItem_29  &YMM_MovieItem_31  &kp PERIOD    &bootloader      &bootloader     &YMM_Group_27    &kp RIGHT_BRACKET  &kp LEFT_BRACE  &YMM_TextItem_28      &kp BACKSLASH
+&trans     &trans             &trans             &trans             &trans        &trans           &trans          &trans                                                                    &kp PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
